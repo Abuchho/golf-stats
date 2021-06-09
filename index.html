@@ -14,15 +14,62 @@
             <img src=images/golf-ball.jpeg alt="golf ball" />
           </div>
         <div class="card-body">
-            <span class="tag tag-green">Golf Stats</span>
-            <h4>What hole are you on?</h4>
-                <div class="user">
-                    <img src="https://yt3.ggpht.com/a/AGF-l7-0J1G0Ue0mcZMw-99kMeVuBmRxiPjyvIYONg=s900-c-k-c0xffffffff-no-rj-mo" alt="user" />
-                    <div class="user-info">
-                        <h5>July Dec</h5>
-                        <small>2h ago</small>
+            <span class="title "><h1>Track Your Stats</h1></span>
+            
+            <div class="drop-down">
+                <button class="drop-down-btn">Choose Hole</button>
+                    <div class="dropdown-content">
+                        <a href="#">Hole 1</a>
+                        <a href="#">Hole 2</a>
+                        <a href="#">Hole 3</a>
+                        <a href="#">Hole 4</a>
+                        <a href="#">Hole 5</a>
+                        <a href="#">Hole 6</a>
+                        <a href="#">Hole 7</a>
+                        <a href="#">Hole 8</a>
+                        <a href="#">Hole 9</a>
+                        <a href="#">Hole 10</a>
+                        <a href="#">Hole 11</a>
+                        <a href="#">Hole 12</a>
+                        <a href="#">Hole 13</a>
+                        <a href="#">Hole 14</a>
+                        <a href="#">Hole 15</a>
+                        <a href="#">Hole 16</a>
+                        <a href="#">Hole 17</a>
+                        <a href="#">Hole 18</a>
                     </div>
+            </div>
+                <div class="user">
+                    
+                    <form class="form-container" action="">
+
+                        <div class="radio-btn">      
+                            <label class="label-style"><b>Fairway Hit</b></label><br>
+                            <input type="radio" id="FairwayYes" name="Fairway" value="yes">
+                            <label for="Fairway">Yes</label><br>
+                            <input type="radio" id="FairwayNo" name="Fairway" value="no">
+                            <label for="Fairway">No</label><br>
+                        </div>   
+                        
+                        <div class="radio-btn">      
+                            <label class="label-style"><b>Green Hit</b></label><br>
+                            <input type="radio" id="GreenYes" name="Green" value="yes">
+                            <label for="Fairway">Yes</label><br>
+                            <input type="radio" id="FairwayNo" name="Green" value="no">
+                            <label for="Green">No</label><br>
+                        </div>
+                        
+                        <p>      
+                        <label class="label-style"><b>Putts</b></label>
+                        <input class="input-style" name="putts" type="text"></p>
+                        <p>      
+                        <label class="label-style"><b>Score</b></label>
+                        <input class="input-style" name="score" type="text"></p>
+                        <p>      
+                        <button class="submit-btn">Submit</button></p>
+                      </form>
                 </div>
+            </div>
         </div>
     </div>
 </body>
