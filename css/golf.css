@@ -38,7 +38,7 @@ body {
     justify-content: center;
     align-items: center;
     padding: 20px;
-    height: 68vh;
+    height: 75vh;
     background-color: mintcream;
   }
   
@@ -105,7 +105,8 @@ body {
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
-    overflow: auto;
+    overflow: scroll;
+    height: 265px;
   }
   
   .dropdown-content a {
@@ -117,6 +118,7 @@ body {
   
   .dropdown-content a:hover {
       background-color: #f1f1f1;
+      
     }
   
 
@@ -136,12 +138,14 @@ body {
 .radio-btn {
     clear: right;
     display: block;
-    margin-bottom: 10px;
-    margin-top: 10px;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    padding: 5px;
 }
 
 .label-style {
     margin: 5px;
+    color: rgb(49, 64, 145);
 }
 .submit-btn {
     background-color:#4CAF50;
@@ -151,4 +155,17 @@ body {
     cursor: pointer;
     color: white;
     border: none;
+   
 }
+
+.submit-btn:hover {
+    background-color: #3e8e41;
+}
+
+.input-style {
+    border: 2px solid #4CAF50;
+    border-radius: 5px;
+    
+}
+
+
