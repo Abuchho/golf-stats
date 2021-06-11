@@ -66,23 +66,12 @@ body {
     margin-top: auto;
   }
   
-  .user img {
-    border-radius: 50%;
-    width: 40px;
-    height: 40px;
-    margin-right: 10px;
-  }
-  .user-info h5 {
-    margin: 0;
-  }
-  .user-info small {
-    color: #545d7a;
-  }
+  
   
 
   /*------Drop Down Menu------------*/
 
-  /* Style The Dropdown Button */
+ 
 .drop-down-btn {
     background-color: #4CAF50;
     color: white;
