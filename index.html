@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Golf Stats</title>
     <link rel="stylesheet" href="/css/golf.css">
+    <script src="/js/main.js"></script>
 </head>
 <body>
     <div class="container">
@@ -17,26 +18,26 @@
             <span class="title "><h1>Track Your Stats</h1></span>
             
             <div class="drop-down">
-                <button class="drop-down-btn">Choose Hole</button>
-                    <div class="dropdown-content">
-                        <a href="#">Hole 1</a>
-                        <a href="#">Hole 2</a>
-                        <a href="#">Hole 3</a>
-                        <a href="#">Hole 4</a>
-                        <a href="#">Hole 5</a>
-                        <a href="#">Hole 6</a>
-                        <a href="#">Hole 7</a>
-                        <a href="#">Hole 8</a>
-                        <a href="#">Hole 9</a>
-                        <a href="#">Hole 10</a>
-                        <a href="#">Hole 11</a>
-                        <a href="#">Hole 12</a>
-                        <a href="#">Hole 13</a>
-                        <a href="#">Hole 14</a>
-                        <a href="#">Hole 15</a>
-                        <a href="#">Hole 16</a>
-                        <a href="#">Hole 17</a>
-                        <a href="#">Hole 18</a>
+                <button id="holeBtn" class="drop-down-btn">Choose Hole</button>
+                    <div id='holesList' class="dropdown-content">
+                        <a href="#1">Hole 1</a>
+                        <a href="#2">Hole 2</a>
+                        <a href="#3">Hole 3</a>
+                        <a href="#4">Hole 4</a>
+                        <a href="#5">Hole 5</a>
+                        <a href="#6">Hole 6</a>
+                        <a href="#7">Hole 7</a>
+                        <a href="#8">Hole 8</a>
+                        <a href="#9">Hole 9</a>
+                        <a href="#10">Hole 10</a>
+                        <a href="#11">Hole 11</a>
+                        <a href="#12">Hole 12</a>
+                        <a href="#13">Hole 13</a>
+                        <a href="#14">Hole 14</a>
+                        <a href="#15">Hole 15</a>
+                        <a href="#16">Hole 16</a>
+                        <a href="#17">Hole 17</a>
+                        <a href="#18">Hole 18</a>
                     </div>
             </div>
                 <div class="user">
@@ -60,15 +61,15 @@
                         </div>
                         <p>      
                             <label class="label-style"><b>Driving Distance</b></label>
-                            <input class="input-style" name="drive-distance" type="text" maxlength="3" pattern="[0-999]{3}" placeholder="250"></p>
+                            <input id="drivingInput" class="input-style" name="drive-distance" type="text" maxlength="3" pattern="[0-999]{3}" placeholder="250" onfocus="inputColor(this);" onblur="colorInputExit(this);"></p>
                             <p>      
                         <p>      
                         <label class="label-style"><b>Putts</b></label>
-                        <input class="input-style" name="putts" type="text" maxlength="2" pattern="[0-99]{2}"></p>
+                        <input class="input-style" id="puttsInput" name="putts" type="text" maxlength="2" pattern="[0-99]{1}" onfocus="inputColor(this);" onblur="colorInputExit(this);"></p>
                         <p>      
                         <label class="label-style"><b>Score</b></label>
-                        <input class="input-style" name="score" type="text" maxlength="2" pattern="[0-99]{2}"></p>
-                        <p class="btn-box"><button class="submit-btn">Submit</button></p>
+                        <input  class="input-style" id="scoreInput" name="score" type="text" maxlength="2" pattern="[0-99]{1}" onfocus="inputColor(this);" onblur="colorInputExit(this);"></p>
+                        <p class="btn-box"><button id="submitInput" class="submit-btn">Submit</button></p>
                       </form>
                 </div>
             </div>
